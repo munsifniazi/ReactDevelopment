@@ -14,6 +14,9 @@ export const App = () => {
         quod sit modi ut voluptatum.
       </p>
       <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
     </>
   );
 };
@@ -25,6 +28,12 @@ const NetflixSeries = () => {
     const genre = 'Action';
     return genre;
   };
+  let age = 9;
+  // if (age < 18) {
+  //   return <p>Restricted Content</p>;
+  // } else if (age >= 18) {
+  //   return <p>Adult Content</p>;
+  // }
   return (
     <>
       <div>
@@ -38,6 +47,7 @@ const NetflixSeries = () => {
         Similique consequuntur nobis optio. Eius fugit delectus officiis sint
         quod sit modi ut voluptatum.
       </p>
+      <button> {age > 18 ? "Watch Now" : "Sorrryy"} </button>
     </>
   );
 };
