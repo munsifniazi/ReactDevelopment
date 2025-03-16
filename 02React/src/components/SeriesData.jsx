@@ -1,12 +1,13 @@
 import React from 'react';
 
-export const SeriesData = ({data}) => {
-  const { id, name, img_url, rating, description, cast, genre, watch_url } = data;
+export const SeriesData = ({ data }) => {
+  const {  name, img_url, rating, description, cast, genre, watch_url } =
+    data;
 
   //   console.log(props);
   return (
     <>
-      <li >
+      <li>
         <div>
           <img
             src={img_url}
@@ -15,14 +16,18 @@ export const SeriesData = ({data}) => {
             height='40%'
           />
         </div>
-        <h1>Name : {name}</h1>
-        <p>Rating : {rating}</p>
-        <p>Description : {description}</p>
-        <p>Genre : {genre}</p>
-        <p>Cast : {cast} </p>
-        <a href={watch_url} target='_blank'>
-          <button>Watch Now</button>
-        </a>
+        <div className='card-content'>
+          <h1>Name : {name}</h1>
+          <p > <span className= {rating >=8.5 ? "superhit" : "average" } > Rating : {rating} </span></p>
+          <p style={{ margin: '.2rem 0' }}>Description : {description}</p>
+          <p>Genre : {genre.join(', ')}</p>
+          <p>Cast : {cast.join(', ')} </p>
+          <a href={watch_url} target='_blank'>
+            <button style={{
+              padding: "10px"
+            }}>Watch Now</button>
+          </a>
+        </div>
       </li>
     </>
   );
