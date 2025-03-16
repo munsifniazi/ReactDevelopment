@@ -3,33 +3,43 @@ import React from 'react';
 const Profile = () => {
   return (
     <>
-      <h1>Profile Card Challenge</h1>
       <ProfileCard
-        name='Munsif Khan'
-        age={30}
+        name={'Munsif Khan'}
+        age={22}
         greetings={
           <div>
             <strong>Heyy Munsif Khan, Have a Great Day...</strong>
           </div>
         }
       >
-        <p>Hobbies : Cricket , Football and Coding.</p>
-        <button>Contack </button>
+        <p>Hobbies : Aisa koi khas toh ni hai wese loll.</p>
+        <button>Contact </button>
       </ProfileCard>
       <ProfileCard
-        name='Ghost Dev'
-        age={29}
+        name={'Munsif Niazi'}
+        age={22}
         greetings={
           <div>
-            <strong>Heyy Ghost Dev, Have a Great Day...</strong>
+            <strong>Heyy Munsif Mere Bhaii, Have a Great Day...</strong>
           </div>
         }
       >
-        <p>Hobbies : Reading, Writing and Coding.</p>
-        <button>Contack </button>
+        <p>Hobbies : Aisa koi khas toh ni hai wese loll.</p>
+        <button>Contact </button>
       </ProfileCard>
     </>
   );
 };
 
 export default Profile;
+
+function ProfileCard({ name, age, greetings }) {
+  // const { name, age, greetings} = props;
+  return (
+    <>
+      <h1>Name : {name} </h1>
+      <p>Age : {age} </p>
+      <p>Greetings : {greetings} </p>
+    </>
+  );
+}
