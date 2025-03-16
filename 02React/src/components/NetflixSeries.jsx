@@ -4,7 +4,7 @@ import { SeriesData } from './SeriesData';
 const NetflixSeries = () => {
   return (
     <>
-      <ul>
+      <ul className= "grid grid-three--cols">
         {seriesData.map((curElem) => {
           return  <SeriesData key={curElem.id} data = {curElem} />
     
