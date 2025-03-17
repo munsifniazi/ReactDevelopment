@@ -42,22 +42,32 @@
 // // export default State;
 
 import React, { useState } from 'react';
-
+import "../EV.css"
 const State = () => {
   const [count, setCount] = useState(0);
   const handleButtonClick = () => {
     setCount(() => count + 1);
-
   };
   return (
     <>
-    <section className='main-div'>  
-
-      <h1>{count}</h1>
-      <button onClick={handleButtonClick}>Add </button>
-    </section>
+      <div className='main-div'>
+        <h1>{count}</h1>
+        <button onClick={handleButtonClick}>Add </button>
+      </div>
+      <ChildComp />
     </>
   );
 };
 
 export default State;
+
+function ChildComp() {
+  console.log('object Child');
+  return (
+    <>
+      <div className='main-div'>
+        <h2>Child Component</h2>
+      </div>
+    </>
+  );
+}
