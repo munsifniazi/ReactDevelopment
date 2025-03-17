@@ -1,3 +1,36 @@
+import React, { useState } from 'react';
+import '../EV.css';
+const State = () => {
+  const [count, setCount] = useState(0);
+  const handleButtonClick = () => {
+    setCount(() => count + 1);
+  };
+  console.log('Parent Rendered');
+
+  return (
+    <>
+      <div className='main-div'>
+        <h1>{count}</h1>
+        <button onClick={handleButtonClick}>Add </button>
+      </div>
+      <ChildComp count={count} />
+    </>
+  );
+};
+
+export default State;
+
+function ChildComp({ count }) {
+  console.log('Child Rendered');
+  return (
+    <>
+      <div className='main-div'>
+        <h2>Child Component - {count}</h2>
+      </div>
+    </>
+  );
+}
+
 // import React, { useState } from 'react';
 
 // const State = () => {
@@ -40,36 +73,3 @@
 // // };
 
 // // export default State;
-
-import React, { useState } from 'react';
-import '../EV.css';
-const State = () => {
-  const [count, setCount] = useState(0);
-  const handleButtonClick = () => {
-    setCount(() => count + 1);
-  };
-  console.log('Parent Rendered');
-
-  return (
-    <>
-      <div className='main-div'>
-        <h1>{count}</h1>
-        <button onClick={handleButtonClick}>Add </button>
-      </div>
-      <ChildComp count={count} />
-    </>
-  );
-};
-
-export default State;
-
-function ChildComp({ count }) {
-  console.log('Child Rendered');
-  return (
-    <>
-      <div className='main-div'>
-        <h2>Child Component - {count}</h2>
-      </div>
-    </>
-  );
-}
