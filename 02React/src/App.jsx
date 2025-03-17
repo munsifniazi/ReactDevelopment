@@ -8,6 +8,7 @@ import State from './components/hooks/State';
 // import Profile from './components/Profile';
 // import './components/Netflix.css';
 import './components/EV.css';
+import DerivedState from './components/hooks/DerivedState';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
       {/* <EventProps /> */}
       {/* <EventPrac /> */}
       {/* <EventPropagation /> */}
-      <State />
+      {/* <State /> */}
+      <DerivedState/>
     </section>
   );
 };
