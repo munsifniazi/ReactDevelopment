@@ -2,10 +2,12 @@ import React from 'react';
 import EventsHandling from './components/EventsHandling';
 import EventProps from './EventProps';
 import EventPrac from './EventPrac';
-import {EventPropagation} from './EventPropagation';
+import { EventPropagation } from './EventPropagation';
+import State from './components/hooks/State';
 // import NetflixSeries from './components/NetflixSeries';
 // import Profile from './components/Profile';
 // import './components/Netflix.css';
+import './components/EV.css';
 
 const App = () => {
   return (
@@ -16,7 +18,8 @@ const App = () => {
       {/* <EventsHandling /> */}
       {/* <EventProps /> */}
       {/* <EventPrac /> */}
-      <EventPropagation />
+      {/* <EventPropagation /> */}
+      <State />
     </section>
   );
 };
