@@ -11,6 +11,7 @@ import './components/EV.css';
 import DerivedState from './components/hooks/DerivedState';
 import PracHooks from './components/hooks/PracHooks';
 import LiftingState from './components/hooks/LiftingState';
+import ToggleSwitch from './Projects/ToggleSwitch/ToggleSwitch';
 
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
       {/* <State /> */}
       {/* <DerivedState/> */}
       {/* <PracHooks /> */}
-      <LiftingState />
+      {/* <LiftingState /> */}
+      <ToggleSwitch/>
     </section>
   );
 };
