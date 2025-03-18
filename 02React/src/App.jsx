@@ -9,6 +9,8 @@ import State from './components/hooks/State';
 // import './components/Netflix.css';
 import './components/EV.css';
 import DerivedState from './components/hooks/DerivedState';
+import PracHooks from './components/hooks/PracHooks';
+import LiftingState from './components/hooks/LiftingState';
 
 const App = () => {
   return (
@@ -21,7 +23,9 @@ const App = () => {
       {/* <EventPrac /> */}
       {/* <EventPropagation /> */}
       {/* <State /> */}
-      <DerivedState/>
+      {/* <DerivedState/> */}
+      {/* <PracHooks /> */}
+      <LiftingState />
     </section>
   );
 };
