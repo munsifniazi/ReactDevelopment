@@ -10,7 +10,6 @@
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
-  scroll-snap-type: y proximity;
 }
 
 h1,
@@ -20,103 +19,20 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 900;
 }
 
-p,
-li,
-a,
-label {
-  font-family: "Urbanist", sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  font-weight: 400;
-  color: var(--para-color);
-  line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
 
 /* Theme */
 :root {
-  --main-color: #0062ff;
-  --supporting-color: #ebf3fe;
-  --font-color: #424242;
-  --bg-color: #f7fcff;
-  --heading-color: #000a19;
-  --hero-heading-color: #003b99;
-  --white-color: #ffffff;
-  --para-color: #504e4d;
-  --btn-hover-bg-color: #003b99;
-  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  --footer-bg-color: #040d12;
+  --primary-color: #1c2833;
+  --secondary-color: #fff;
+  --bg-color: #f2f3f4;
+ 
 }
 
-/* Layout */
-section {
-  scroll-snap-align: center;
-}
-
-.container {
-  max-width: 142rem;
-  margin: 0 auto;
-  padding: 9.6rem 2.4rem;
-}
-
-/* Specific Section Padding */
-:is(
-    .section-about,
-    .section-blog,
-    .section-contact,
-    .section-course,
-    .section-why--choose,
-    .section-contact--homepage
-  )
-  .container:first-child {
-  padding: 6.4rem 2.4rem 2.4rem 2.4rem;
-}
-
-/* Grid Layout */
-.grid {
-  display: grid;
-  gap: 2.5rem; /* 🔥 Beech ka proper gap */
-}
-
-.grid-two--cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-three--cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-four--cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .grid-three--cols {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; /* Tablet view ke liye thoda kam gap */
-  }
-
-  .grid-four--cols {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .grid-two--cols,
-  .grid-three--cols,
-  .grid-four--cols {
-    grid-template-columns: 1fr;
-    gap: 1.5rem; /* Mobile view ke liye aur thoda kam gap */
-  }
+h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
 }
