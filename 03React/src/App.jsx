@@ -1,5 +1,6 @@
 import React from "react";
 import Intro from "./Intro";
+import { Hehe } from "./Hehe";
 
 const App = () => {
   return (
@@ -14,6 +15,9 @@ const App = () => {
       <p>React is created by Facebook.</p>
       <p>React is used by Netflix, BBC, Instagram, and many more...</p>
       <Intro />
+      <Hehe />
+      <p>This is the end of the tutorial.</p>
+      <p>Thank You for Watching.</p>
     </div>
   );
 };
